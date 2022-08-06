@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/fav.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="/css/Form.css">
+</head>
+<body>
+    <form>
+        <header class="headerContainer">
+            <h1>BridgeLabz Information Form</h1>
+        </header>
+        <div>
+            <label for="text">Name: </label>
+            <input type="text" id="text" name="text" required>
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="pwd">Password: </label>
+            <input type="password" id="pwd" name="pwd" required>
+        </div>
+        <div>
+            <label for="email">Email Address: </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="url">Website: </label>
+            <input type="url" id="url" name="url">
+        </div>
+        <div>
+            <label for="number">Country Code: </label>
+            <input type="number" id="number" name="number">
+        </div>
+        <div>
+            <label for="tel">Contact Number: </label>
+            <input type="tel" id="tel" name="tel">
+        </div>
+        <div>
+            <label for="search">Search: </label>
+            <input type="search" id="search" name="search">
+        </div>
+        <div class="nativeDateTimePicker">
+            <label for="startDate">Date And time: </label>
+            <input type="datetime-local" id="startdate" name="startdate">
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="salary">Salary: </label>
+            <input type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+            <output class="salary-output" for="salary">400000</output>
+        </div>
+        <div class="submit-reset">
+            <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+            <button type="reset" class="resetButton button">Reset</button>
+        </div>
+    </form>
+    <script src="/javaScript/Form.js"></script> 
+</body>
+
+</html>

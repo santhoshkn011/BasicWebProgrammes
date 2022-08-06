@@ -1,0 +1,73 @@
+body {
+    padding: 2em;
+}
+
+.BL_logo {
+    width: 7%;
+}
+
+.headerContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: tomato;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+}
+
+.footerContainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background: lightgreen;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mainContentItem {
+    text-align: left;
+    background: lightblue;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background-color: aqua;
+}
+
+.sideBarLeftItem {
+    background: gold;
+}
+
+.sideBarRightItem {
+    background: hotpink;
+}
+
+.sideBarItem {
+    flex: 1 0 0;
+    border: 5px solid purple;
+}
+
+.mainContentItem {
+    flex: 3 0px;
+}
+
+.sideBarLeftItem {
+    order: 1;
+}
+
+.mainContentItem {
+    order: 2;
+}
+
+.sideBarRightItem {
+    order: 3;
+}

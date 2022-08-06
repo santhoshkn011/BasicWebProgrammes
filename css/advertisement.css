@@ -1,0 +1,20 @@
+.media {
+    display: flex;
+    align-items: flex-start;
+    background-color: #F6F3EB;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 50em;
+  }
+  .media-object {
+    margin-right: 10em;
+  }
+  .media-body {
+    flex: 1;
+  }
+  .media-heading {
+    margin: 1 1 .5em;
+  }
+  body {
+    background-color: lightblue;
+    }
