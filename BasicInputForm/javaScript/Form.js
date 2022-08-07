@@ -32,3 +32,14 @@ telephone.addEventListener('input', function() {
         else 
             telephoneError.textContent = "Incorrect Contact Details.";
     });
+
+const password = document.querySelector('#pwd');
+const passwordError = document.querySelector('.pwd-error');
+password.addEventListener('input', function() {
+    let passwordRegex = RegExp('^[a-zA-Z0-9]{8,}$')
+    if (passwordRegex.test(password.value)) {
+        passwordError.textContent = "";
+    } else {
+        passwordError.textContent = "Invalid Password";
+    }
+});
